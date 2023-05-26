@@ -13,5 +13,8 @@ hbsConfig(app);
 
 app.use(homeController);
 app.use('/cubes', cubeController);
+app.get('*', (req, res)=>{ //where * is called wild card and means everything
+    res.redirect('/404');
+});
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}...`));

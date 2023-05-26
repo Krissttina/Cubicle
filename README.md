@@ -13,6 +13,13 @@ it must be set as well
 and a method -> with what method we want to send the data /get or post/->get put all the send data in the url as query string /not gud/ -> post - like hidden data in the request
 7. **require** can work directly with json files
 8. Partial is used for repeating, it should be used whenever an item is appearing multiple times
+9. MVC
+- M -> model
+- C -> controller -> take the data from the manager /model/ and gives them to the view
+- V -> view
+10. 404 page should be done at the end of the work
+- at index.js routing
+- basicly meaning: if the given url path does not fit anything than go to 404 page
 
 Installation
 1. npm init -y -> for initializing a project(info can be later updated)
@@ -49,4 +56,5 @@ Modular router -
 - correct individual details link
 - use template
 - redirect to home/back btn/
-17. Search working
+17. 404 page
+18. Search working
