@@ -45,6 +45,7 @@ Modular router -
 - if no cubes are entered warning
 15. Partial 
 16. Details page
+- cube controller config and manager pass the data
 - correct individual details link
 - use template
 - redirect to home/back btn/

@@ -27,7 +27,8 @@ router.post('/create', (req, res) => { //action#2 accept data after form is subm
 });
 
 router.get('/:cubeId/details', (req, res) => {
-    res.render('details');
+    const cube = cubeManager.getOne(req.params.cubeId);
+    res.render('details', { cube });
 });
 
 module.exports = router;
