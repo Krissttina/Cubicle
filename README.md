@@ -22,4 +22,5 @@ Steps
 - installing
 - config
 4. Render main page/index/
-5. Fix css styles
+5. Conf the main layout
+6. Fix css styles
