@@ -23,4 +23,5 @@ Steps
 - config
 4. Render main page/index/
 5. Conf the main layout
-6. Fix css styles
+6. Fix css styles by express config
+7. Set path to handle styling
