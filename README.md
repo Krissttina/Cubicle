@@ -9,6 +9,8 @@ Notes
 so when the folder is nested in another one so the real location
 it must be set as well 
 5. **path resolve** creates absolute path from relative path
+6. In the form /create.hbs/ their is an action -> where we want to send the data after the form is submited /by default if norhing is set the data is sended to the page itself/
+and a method -> with what method we want to send the data /get or post/->get put all the send data in the url as query string /not gud/ -> post - like hidden data in the request
 
 Installation
 1. npm init -y -> for initializing a project(info can be later updated)
@@ -30,3 +32,6 @@ Steps
 - config folder
 9. Controllers - module who has logicly connected actions
 Modular router -
+10. cube controller
+11. add cube page display
+12. save data from form /add cube/

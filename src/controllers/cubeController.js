@@ -6,8 +6,8 @@ router.get('/create', (req, res) => { //action#1 serve form
 });
 
 router.post('/create', (req, res) => { //action#2 accept data after form is submited
-    console.log(req.body); // get data
-    res.redirect('/');
+    console.log(req.body); // get data and save
+    res.redirect('/'); //redirect to main page after submit form
 });
 
 module.exports = router;
