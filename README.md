@@ -11,6 +11,7 @@ it must be set as well
 5. **path resolve** creates absolute path from relative path
 6. In the form /create.hbs/ their is an action -> where we want to send the data after the form is submited /by default if nothing is set the data is sended to the page itself-to the path it came in/
 and a method -> with what method we want to send the data /get or post/->get put all the send data in the url as query string /not gud/ -> post - like hidden data in the request
+7. **require** can work directly with json files
 
 Installation
 1. npm init -y -> for initializing a project(info can be later updated)
@@ -37,3 +38,6 @@ Modular router -
 12. save data from form /add cube/
 13. managers/services
 - purpose: manage the cube data
+14. Visualize custom cubes
+- get cubes by the manager /in homecontroller/
+- use template
