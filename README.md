@@ -8,6 +8,7 @@ Notes
 4. By default Handlebars is searching for the **views** folder in the root dir
 so when the folder is nested in another one so the real location
 it must be set as well 
+5. **path resolve** creates absolute path from relative path
 
 Installation
 1. npm init -y -> for initializing a project(info can be later updated)
@@ -25,3 +26,5 @@ Steps
 5. Conf the main layout
 6. Fix css styles by express config
 7. Set path to handle styling
+8. Work on the architecture
+- config folder
