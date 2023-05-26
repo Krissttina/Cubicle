@@ -11,8 +11,10 @@
   <div class="cube">
     <img class="cube" src="{{imgUrl}}" alt="imghere">
     <p class="name">{{name}}</p>
-    <p><span>Difficulty level:</span> {{difficulty}}</p>
+    <p><span>Difficulty level:</span> {{difficultyLevel}}</p>
     <a class="btn" href="/details/5c3a68d9f78d6638ec8fdad7">Details</a>
   </div>
+  {{else}}
+  <p>There are no cubes yet!</p>
   {{/each}}
 </main>

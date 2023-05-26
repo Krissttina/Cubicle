@@ -9,18 +9,18 @@ router.get('/create', (req, res) => { //action#1 serve form
 });
 
 router.post('/create', (req, res) => { //action#2 accept data after form is submited
-    const {
+    const { //validate data
         name,
         description,
         imgUrl,
-        difficulty,
-    } = req.body; // get data and save
+        difficultyLevel,
+    } = req.body; // get data and save 
 
     cubeManager.create({ //expects concrete data
         name,
         description,
         imgUrl,
-        difficulty: Number(difficulty),
+        difficultyLevel: Number(difficultyLevel),
     });
 
     res.redirect('/'); //redirect to main page after submit form

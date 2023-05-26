@@ -39,5 +39,6 @@ Modular router -
 13. managers/services
 - purpose: manage the cube data
 14. Visualize custom cubes
-- get cubes by the manager /in homecontroller/
+- get cubes by the manager /in homeController/
 - use template
+- if no cubes are entered warning
