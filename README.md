@@ -28,3 +28,5 @@ Steps
 7. Set path to handle styling
 8. Work on the architecture
 - config folder
+9. Controllers - module who has logicly connected actions
+Modular router -
