@@ -1,0 +1,28 @@
+{
+  "name": "workshop-cubicle",
+  "version": "1.0.0",
+  "description": "SoftUni Web JS Workshop #1 exercise",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krissttina/Cubicle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krissttina/Cubicle/issues"
+  },
+  "homepage": "https://github.com/Krissttina/Cubicle#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7"
+  }
+}
