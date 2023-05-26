@@ -8,6 +8,7 @@ function expressConfig(app) {
 
   //middleware 
   //when data is send from form this mdl will parse them as js obj and put them on req.body
+  //also parses query string
   app.use(express.urlencoded({extended: false})) //-> if true qs library
 }
 

@@ -20,6 +20,9 @@ and a method -> with what method we want to send the data /get or post/->get put
 10. 404 page should be done at the end of the work
 - at index.js routing
 - basicly meaning: if the given url path does not fit anything than go to 404 page
+11. req.params -> for parmeters
+req.body -> for post data from form which are sended and parsed
+req.query -> in the url, everything between ? and #(# may not be inclueded) is called query string
 
 Installation
 1. npm init -y -> for initializing a project(info can be later updated)
@@ -58,3 +61,7 @@ Modular router -
 - redirect to home/back btn/
 17. 404 page
 18. Search working
+- set hbs file action and method
+- manager getALl enhanced with search logic
+- controler sents search parameters too
+- index.hbs value set
