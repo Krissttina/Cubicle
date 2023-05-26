@@ -12,6 +12,7 @@ it must be set as well
 6. In the form /create.hbs/ their is an action -> where we want to send the data after the form is submited /by default if nothing is set the data is sended to the page itself-to the path it came in/
 and a method -> with what method we want to send the data /get or post/->get put all the send data in the url as query string /not gud/ -> post - like hidden data in the request
 7. **require** can work directly with json files
+8. Partial is used for repeating, it should be used whenever an item is appearing multiple times
 
 Installation
 1. npm init -y -> for initializing a project(info can be later updated)
@@ -42,3 +43,9 @@ Modular router -
 - get cubes by the manager /in homeController/
 - use template
 - if no cubes are entered warning
+15. Partial 
+16. Details page
+- correct individual details link
+- use template
+- redirect to home/back btn/
+17. Search working

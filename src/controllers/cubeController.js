@@ -26,4 +26,8 @@ router.post('/create', (req, res) => { //action#2 accept data after form is subm
     res.redirect('/'); //redirect to main page after submit form
 });
 
+router.get('/:cubeId/details', (req, res) => {
+    res.render('details');
+});
+
 module.exports = router;
