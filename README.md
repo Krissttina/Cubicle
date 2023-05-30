@@ -90,4 +90,5 @@ Modular router -
 - CRUD operations
 - accessoryContr.js
 - post
+- create Accessory manager
 - create Accessory model
