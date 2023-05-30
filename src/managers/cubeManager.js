@@ -1,13 +1,11 @@
 const Cube = require('../models/Cube');
 
-const cubes = [];
-
-exports.getAll = (search, from, to) => {
+exports.getAll = async (search, from, to) => {
   //copy and return reference of the array
-  let result = cubes.slice();
+  let result = await Cube.slice().lean();
     //search filter logic
   if (search) {
-    result = result.filter((cube) => cube.name.toLowerCase().includes(search.toLowerCase()));
+    result = result.filter(cube => cube.name.toLowerCase().includes(search.toLowerCase()));
   }
 
   if(from){
@@ -20,10 +18,9 @@ exports.getAll = (search, from, to) => {
   return result;
 };
 
-exports.getOne = (cubeId) => cubes.find((x) => x.id == cubeId);
 
 exports.create = async (cubeData) => {
-  const cube = new Cube(cubeData);
+  const cube = new Cube(cubeData); //creates mongoose document(objects with additional funcionalities)
 
   await cube.save();
 

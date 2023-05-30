@@ -26,8 +26,15 @@ router.post('/create', async (req, res) => { //action#2 accept data after form i
     res.redirect('/'); //redirect to main page after submit form
 });
 
-router.get('/:cubeId/details', (req, res) => {
-    const cube = cubeManager.getOne(req.params.cubeId);
+router.get('/:cubeId/details', async(req, res) => {
+    const cube = await cubeManager.getOne(req.params.cubeId).lean();
+    //lean() resolves the problem with the documentation part
+    //lean() izvajda stoinostite v modela
+
+    if(!cube){
+        return res.redirect('/404');
+    }
+
     res.render('details', { cube });
 });
 

@@ -14,7 +14,7 @@ hbsConfig(app);
 
 dbConnect()
   .then(() => console.log("DB Connected successfully"))
-  .catch(err => console.log(`DB errpr: ${err}`));
+  .catch(err => console.log(`DB errpr: ${err.message}`));
 
 app.use(homeController);
 app.use("/cubes", cubeController);

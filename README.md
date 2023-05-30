@@ -24,7 +24,11 @@ and a method -> with what method we want to send the data (GET or POST) -> GET -
 11. req.params -> for parameters
 req.body -> for POST data from form which are send and parse
 req.query -> everything in the url between ? and #(# may not be included) is called query string
+
     Part #2
+1. service layer should not know about view model
+2. Mongoose does not work with clear objects, instead it work with 'documents'(objects with additional funcionalities)
+3. Hbs does not work with documents tho
 
 ### Installation
     Part #1
@@ -32,6 +36,7 @@ req.query -> everything in the url between ? and #(# may not be included) is cal
 2. npm i nodemon -D -> for downloading nodemon as devDependency(package which will not be included in the deployed project)
 3. npm i express -> install express
 4. npm i express-handlebars -> install handlebars library
+    
     Part #2
 1. npm i mongoose -> installing mongoose and connect to db
 
@@ -71,10 +76,13 @@ Modular router -
 - manager getALl enhanced with search logic
 - controler sents search parameters too
 - index.hbs value set
+
     Part #2
 1. Install database
-2. Make a way to create cubes in the db
+2. Create cubes in the db
 - create mongoose model
     - when model is created it should be in a single person
 - Cube model creates
 - manager and controller changes
+3. Display saved data from db
+- getAll and getOne methods in manager conf
