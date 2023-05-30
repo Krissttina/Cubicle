@@ -92,3 +92,4 @@ Modular router -
 - post
 - create Accessory manager
 - create Accessory model
+5. Accessory attach page
