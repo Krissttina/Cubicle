@@ -98,3 +98,4 @@ Modular router -
 6. Create relation between the two databases
 - determine the type of the relation
 - models
+7. Display all attached accessories

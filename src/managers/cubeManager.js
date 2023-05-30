@@ -20,7 +20,7 @@ exports.getAll =  async (search, from, to) => {
   return result;
 };
 
-exports.getOne = (cubeId) => Cube.findById(cubeId);
+exports.getOne = (cubeId) => Cube.findById(cubeId).populate('accessories');
 
 exports.create = async (cubeData) => {
   const cube = new Cube(cubeData); //creates mongoose document(objects with additional funcionalities)

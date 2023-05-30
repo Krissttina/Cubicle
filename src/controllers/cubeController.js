@@ -32,6 +32,7 @@ router.get('/:cubeId/details', async (req, res) => {
     //lean() resolves the problem with the documentation part
     //lean() izvajda stoinostite v modela
 
+
     if(!cube){
         return res.redirect('/404');
     }
@@ -41,7 +42,7 @@ router.get('/:cubeId/details', async (req, res) => {
 
 //accessory attach
 
-router.post('/:cubId/attach-accessory', async (req, res) => {
+router.get('/:cubId/attach-accessory', async (req, res) => {
     const cube = await cubeManager.getOne(req.params.cubeId).lean();
     const accessories = await accessoryManager.getAll().lean();
     const hasAccessories = accessories.length > 0;
