@@ -95,3 +95,6 @@ Modular router -
 5. Accessory attach page
 - add accessory to details page 
 - add routing to the page
+6. Create relation between the two databases
+- determine the type of the relation
+- models
