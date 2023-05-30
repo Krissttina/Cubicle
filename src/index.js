@@ -5,6 +5,7 @@ const hbsConfig = require("./config/hbsConfig");
 const homeController = require("./controllers/homeControllers");
 const cubeController = require("./controllers/cubeController");
 const dbConnect = require("./config/dbConf");
+const accessoryContr = require('./controllers/accessoryContr');
 
 const app = express(); //create instance
 const PORT = 5000; //port value
@@ -18,6 +19,7 @@ dbConnect()
 
 app.use(homeController);
 app.use("/cubes", cubeController);
+app.use("/accessories", accessoryContr);
 app.get("*", (req, res) => {
   //where * is called wild card and means everything
   res.redirect("/404");

@@ -24,7 +24,6 @@ and a method -> with what method we want to send the data (GET or POST) -> GET -
 11. req.params -> for parameters
 req.body -> for POST data from form which are send and parse
 req.query -> everything in the url between ? and #(# may not be included) is called query string
-
     Part #2
 1. service layer should not know about view model
 2. Mongoose does not work with clear objects, instead it work with 'documents'(objects with additional funcionalities)
@@ -86,3 +85,7 @@ Modular router -
 - manager and controller changes
 3. Display saved data from db
 - getAll and getOne methods in manager conf
+- lean()
+4. Accessory
+- CRUD operations
+- accessoryContr.js
