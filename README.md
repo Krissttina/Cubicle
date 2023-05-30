@@ -76,3 +76,5 @@ Modular router -
 2. Make a way to create cubes in the db
 - create mongoose model
     - when model is created it should be in a single person
+- Cube model creates
+- manager and controller changes
