@@ -1,8 +1,9 @@
 ## Workshop-Cubicle
 SoftUni JS Web  
-Workshop #1
+Workshop
 
 ### Notes
+    Part #1
 1. Source code should be put in src folder, the root dir is meant to be filled with configuration files
 2. Everything included in the gitignore file will not be committed to the GitHub repo
 3. Packages should not be committed
@@ -23,14 +24,19 @@ and a method -> with what method we want to send the data (GET or POST) -> GET -
 11. req.params -> for parameters
 req.body -> for POST data from form which are send and parse
 req.query -> everything in the url between ? and #(# may not be included) is called query string
+    Part #2
 
 ### Installation
+    Part #1
 1. npm init -y -> for initializing a project(info can be later updated)
 2. npm i nodemon -D -> for downloading nodemon as devDependency(package which will not be included in the deployed project)
 3. npm i express -> install express
 4. npm i express-handlebars -> install handlebars library
+    Part #2
+1. npm i mongoose -> installing mongoose and connect to db
 
 ### Instructions
+    Part #1
 1. Config scripts-start command in package.json: 'nodemon src/index.js' -> so when this is written in the console the server will start working along with nodemon
 2. Set the home page path and create the server by setting its port, finally test if it s working (set express to the app)
 3. Set up Handlebars
@@ -65,3 +71,10 @@ Modular router -
 - manager getALl enhanced with search logic
 - controler sents search parameters too
 - index.hbs value set
+    Part #2
+1. Install database
+2. Make a way to create cubes in the db
+- create mongoose model
+    - when model is created it should be in a single person
+- Cube model creates
+- manager and controller changes

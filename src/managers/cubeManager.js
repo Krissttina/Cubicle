@@ -1,3 +1,5 @@
+const Cube = require('../models/Cube');
+
 const cubes = [];
 
 exports.getAll = (search, from, to) => {
@@ -20,13 +22,10 @@ exports.getAll = (search, from, to) => {
 
 exports.getOne = (cubeId) => cubes.find((x) => x.id == cubeId);
 
-exports.create = (cubeData) => {
-  const newCube = {
-    id: cubes.length + 1,
-    ...cubeData,
-  };
+exports.create = async (cubeData) => {
+  const cube = new Cube(cubeData);
 
-  cubes.push(newCube);
+  await cube.save();
 
-  return newCube;
+  return cube;
 };
