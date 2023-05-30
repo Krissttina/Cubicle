@@ -1,9 +1,11 @@
 const Cube = require('../models/Cube');
 
-exports.getAll = async (search, from, to) => {
+exports.getAll =  async (search, from, to) => {
   //copy and return reference of the array
-  let result = await Cube.slice().lean();
+  let result = await Cube.find().lean();
+  
     //search filter logic
+    //TODO: use mongoose to filter in the db
   if (search) {
     result = result.filter(cube => cube.name.toLowerCase().includes(search.toLowerCase()));
   }
@@ -18,6 +20,7 @@ exports.getAll = async (search, from, to) => {
   return result;
 };
 
+exports.getOne = (cubeId) => Cube.fundById(cubeId);
 
 exports.create = async (cubeData) => {
   const cube = new Cube(cubeData); //creates mongoose document(objects with additional funcionalities)
