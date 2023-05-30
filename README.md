@@ -93,3 +93,5 @@ Modular router -
 - create Accessory manager
 - create Accessory model
 5. Accessory attach page
+- add accessory to details page 
+- add routing to the page
