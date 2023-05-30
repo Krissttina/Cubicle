@@ -73,3 +73,6 @@ Modular router -
 - index.hbs value set
     Part #2
 1. Install database
+2. Make a way to create cubes in the db
+- create mongoose model
+    - when model is created it should be in a single person
