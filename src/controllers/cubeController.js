@@ -5,7 +5,6 @@ const accessoryManager = require('../managers/accessoryManager');
 
 //Path /cubes/create
 router.get('/create', (req, res) => { //action#1 serve form
-    
     res.render('create');
 });
 

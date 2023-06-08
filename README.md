@@ -44,6 +44,7 @@ req.query -> everything in the url between ? and #(# may not be included) is cal
     Part #3
 1. npm i bcrybt -> encrypting passwords when validating(hash pswds)
 2. npm i cookie-parser -> 
+3. npm i jsonwebtoken ->
 
 ### Instructions
     Part #1
@@ -114,4 +115,6 @@ Modular router -
 - validate pass
 - save pass encrypted
 3. Add log in view page
-4. 
+4. Browser should know when a user is loged, so there is cookie parser to help
+- create token
+- browser receives a cookie with that token
