@@ -28,6 +28,8 @@ req.query -> everything in the url between ? and #(# may not be included) is cal
 1. service layer should not know about view model
 2. Mongoose does not work with clear objects, instead it work with 'documents'(objects with additional funcionalities)
 3. Hbs does not work with documents tho
+    Part #3
+
 
 ### Installation
     Part #1
@@ -38,6 +40,10 @@ req.query -> everything in the url between ? and #(# may not be included) is cal
     
     Part #2
 1. npm i mongoose -> installing mongoose and connect to db
+
+    Part #3
+1. npm i bcrybt -> encrypting passwords when validating(hash pswds)
+2. npm i cookie-parser -> 
 
 ### Instructions
     Part #1
@@ -99,3 +105,7 @@ Modular router -
 - determine the type of the relation
 - models
 7. Display all attached accessories
+
+    Part #3
+1. Refacturing structure; Additional nav options; set Register page and change to hbs
+- create user controller to display the view
