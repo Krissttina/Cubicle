@@ -21,6 +21,7 @@ userSchema.virtual('repeatPassword')
         }
     });
 
+//encrypt pass before save in db
 userSchema.pre('save', async function(){
     const hash = await bcrypt.hash(this.password, 10);
 
