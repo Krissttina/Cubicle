@@ -112,4 +112,5 @@ Modular router -
 - set req.body data
 2. set data from register in db
 - validate pass
-3. Set log in page
+- save pass encrypted
+3. Set log in view page
