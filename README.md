@@ -109,3 +109,7 @@ Modular router -
     Part #3
 1. Refacturing structure; Additional nav options; set Register page and change to hbs
 - create user controller to display the view
+- set req.body data
+2. set data from register in db
+- validate pass
+3. Set log in page
