@@ -21,6 +21,7 @@ router.post('/create', async (req, res) => { //action#2 accept data after form i
         description,
         imgUrl,
         difficultyLevel: Number(difficultyLevel),
+        owner: req.user._id,
     });
 
     res.redirect('/'); //redirect to main page after submit form
