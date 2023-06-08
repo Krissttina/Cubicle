@@ -113,4 +113,5 @@ Modular router -
 2. set data from register in db
 - validate pass
 - save pass encrypted
-3. Set log in view page
+3. Add log in view page
+4. 
