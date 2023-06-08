@@ -1,6 +1,7 @@
 const express = require("express"); //get express by express library
 const path = require("path"); //path module for setting styling
 const cookieParser = require('cookie-parser');
+const { auth } = require('../middlewares/auth');
 
 function expressConfig(app) {
   //Express config
@@ -12,6 +13,7 @@ function expressConfig(app) {
   //also parses query string
   app.use(express.urlencoded({extended: false})) //-> if true qs library
   app.use(cookieParser());
+  app.use(auth);
 }
 
 module.exports = expressConfig;
