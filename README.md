@@ -118,3 +118,7 @@ Modular router -
 4. Browser should know when a user is loged, so there is cookie parser to help
 - create token
 - browser receives a cookie with that token
+5. Add cube owner(person who created it)
+6. Add additional cube Edit & Delete pages for the owner
+- set pages
+- call for them in cubeController

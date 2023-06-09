@@ -57,6 +57,15 @@ router.post('/:cubeId/attach-accessory', async (req, res) => {
     await cubeManager.attachAccessory(cubeId, accessory);
 
     res.redirect(`/cubes/${cubeId}/details`);
-})
+});
+
+router.get('/:cubeId/delete', async (req, res) => {
+    const cube = await cubeManager.getOne(req.params.cubeId).lean();
+    res.render('cube/delete', { cube });//where cube is in the folder src/views and delete is the file to load
+});
+
+router.get('/:cubeId/edit', (req, res) => {
+    res.render('cube/edit');//where cube is in the folder src/views and edit is the file to load
+});
 
 module.exports = router;
