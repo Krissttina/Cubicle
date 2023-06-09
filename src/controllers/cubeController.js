@@ -4,7 +4,7 @@ const cubeManager = require('../managers/cubeManager');
 const accessoryManager = require('../managers/accessoryManager');
 const { getDiffLvlOptions } = require('../utils/viewHelpers');
 
-//Path /cubes/create
+//Route Path /cubes/create
 router.get('/create', (req, res) => { //action#1 serve form
     res.render('create');
 });
@@ -33,12 +33,13 @@ router.get('/:cubeId/details', async (req, res) => {
     //lean() resolves the problem with the documentation part
     //lean() izvajda stoinostite v modela
 
-
     if(!cube){
         return res.redirect('/404');
     }
 
-    res.render('details', { cube });
+    const isOwner = cube.owner?.toString() === req.user._id;
+
+    res.render('details', { cube, isOwner });
 });
 
 //accessory attach

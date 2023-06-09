@@ -123,3 +123,7 @@ Modular router -
 - set pages
 - call for them in cubeController
 - delete in cubeManager
+- show dinamicly generated dif lvl
+7. Conditional btns
+8. Conditional nav
+9. logout
