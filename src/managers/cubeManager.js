@@ -11,11 +11,11 @@ exports.getAll =  async (search, from, to) => {
   }
 
   if(from){
-    result = result.filter(cube => cube.difficultyLevcel >= Number(from));
+    result = result.filter(cube => cube.difficultyLevel >= Number(from));
   }
 
   if(to){
-    result = result.filter(cube => cube.difficultyLevcel <= Number(to));
+    result = result.filter(cube => cube.difficultyLevel <= Number(to));
   }
   return result;
 };

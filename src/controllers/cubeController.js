@@ -2,6 +2,7 @@ const router = require('express').Router();
 
 const cubeManager = require('../managers/cubeManager');
 const accessoryManager = require('../managers/accessoryManager');
+const { getDiffLvlOptions } = require('../utils/viewHelpers');
 
 //Path /cubes/create
 router.get('/create', (req, res) => { //action#1 serve form
@@ -61,7 +62,8 @@ router.post('/:cubeId/attach-accessory', async (req, res) => {
 
 router.get('/:cubeId/delete', async (req, res) => {
     const cube = await cubeManager.getOne(req.params.cubeId).lean();
-    res.render('cube/delete', { cube });//where cube is in the folder src/views and delete is the file to load
+    const options = getDiffLvlOptions(cube.difficultyLevel);
+    res.render('cube/delete', { cube, options });//where cube is in the folder src/views and delete is the file to load
 });
 
 router.post('/:cubeId/delete', async (req, res) => {
@@ -72,7 +74,10 @@ router.post('/:cubeId/delete', async (req, res) => {
 
 router.get('/:cubeId/edit', async(req, res) => {
     const cube = await cubeManager.getOne(req.params.cubeId).lean();
-    res.render('cube/edit', { cube });//where cube is in the folder src/views and edit is the file to load
+    
+    const options = getDiffLvlOptions(cube.difficultyLevel);
+
+    res.render('cube/edit', { cube, options });//where cube is in the folder src/views and edit is the file to load
 });
 
 router.post('/:cubeId/edit', async (req, res) => {
