@@ -127,3 +127,4 @@ Modular router -
 7. Conditional btns
 8. Conditional nav
 9. logout
+10. authentication route
