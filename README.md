@@ -122,3 +122,4 @@ Modular router -
 6. Add additional cube Edit & Delete pages for the owner
 - set pages
 - call for them in cubeController
+- delete in cubeManager

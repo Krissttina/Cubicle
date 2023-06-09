@@ -64,6 +64,12 @@ router.get('/:cubeId/delete', async (req, res) => {
     res.render('cube/delete', { cube });//where cube is in the folder src/views and delete is the file to load
 });
 
+router.post('/:cubeId/delete', async (req, res) => {
+    await cubeManager.delete(req.params.cubeId);
+
+    res.redirect('/');
+})
+
 router.get('/:cubeId/edit', (req, res) => {
     res.render('cube/edit');//where cube is in the folder src/views and edit is the file to load
 });
