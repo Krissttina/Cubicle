@@ -1,6 +1,7 @@
 const router = require('express').Router();
 
 const userManager = require('../managers/userManager');
+const { extractErrMsg } = require('../utils/errorHelper');
 
 router.get('/register', (req, res) => {
     res.render('users/register');
@@ -14,7 +15,8 @@ router.post('/register', async (req, res) => {
     
        res.redirect('/users/login'); 
     }catch(err){
-        res.status(400).render('users/register', { errorMessage: err.message });
+        const errorMessage = extractErrMsg(err);
+        res.status(404).render('users/register', { errorMessage });
     }
     
 });

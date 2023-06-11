@@ -128,3 +128,8 @@ Modular router -
 8. Conditional nav
 9. logout
 10. authentication route
+    #Part 4
+1. Error handling
+    - expected errors
+        - register error handling
+        
